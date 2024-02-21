@@ -12,12 +12,12 @@ import './globals.css';
 
 const App = () => {
   return (
-    <main className='flex h-screen'>
+    <main className="flex h-screen">
         <Routes>
             {/* public routes */}
             <Route element={<AuthLayout/>}>
                 <Route path="/sign-in" element={<SigninForm />} />
-                <Route path="/sign-in" element={<SignupForm />} />
+                <Route path="/sign-up" element={<SignupForm />} />
             </Route>
             {/* private routes */}
             <Route element={<RootLayout/>}>
